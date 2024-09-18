@@ -1,6 +1,7 @@
 import Priority from "./Priority";
 import Status from "./Status";
 import User from "./User";
+
 const KanbanBoard = ({ criteria }) => {
   if (criteria.grouping === "Status") {
     return <Status sorting={criteria.ordering} />;
@@ -12,4 +13,5 @@ const KanbanBoard = ({ criteria }) => {
     return <Status sorting={criteria.ordering} />;
   }
 };
+
 export default KanbanBoard;
