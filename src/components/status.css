@@ -1,0 +1,73 @@
+.task-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.task-box-id {
+  display: flex;
+  justify-content: space-between;
+}
+.task-tag {
+  border-width: 0.11px;
+  border-color: rgba(156, 163, 175);
+  border-radius: 0.375rem;
+  border-style: solid;
+  padding: 0.2rem;
+  width: max-content;
+  color: rgba(156, 163, 175);
+}
+.task-tag-div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.task {
+  border-width: 4px;
+  border-color: black;
+  border-radius: 0.375rem;
+  border-style: solid;
+}
+
+.status-box {
+  border-width: 4px;
+  border-color: black;
+  border-radius: 0.375rem;
+  /* border-style: solid; */
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* gap: 2.5rem; */
+}
+.section-part {
+  /* max-width: 15%; */
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: 19rem;
+  border-width: 4px;
+  border-color: black;
+  border-radius: 0.375rem;
+  border-style: solid;
+}
+
+@media (max-width: 425px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-part {
+    flex-basis: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
