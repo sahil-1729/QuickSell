@@ -75,7 +75,8 @@ const Status = ({ sorting }) => {
                   <div>
                     {" "}
                     <img src={val.icon} alt="fireSpot" /> &nbsp;
-                    {val.status} &nbsp; {filtered.length}
+                    {val.status} &nbsp;
+                    <span className="task-length">{filtered.length}</span>
                   </div>
                   <div>
                     {" "}

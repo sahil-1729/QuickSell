@@ -86,7 +86,8 @@ const Priority = ({ sorting }) => {
                   <div>
                     {" "}
                     <img src={val.icon} alt="fireSpot" /> &nbsp;
-                    {val.priority} &nbsp; {filtered.length}
+                    {val.priority} &nbsp;
+                    <span className="task-length">{filtered.length}</span>
                   </div>
                   <div>
                     {" "}

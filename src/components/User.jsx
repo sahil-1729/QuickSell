@@ -60,7 +60,8 @@ const User = ({ sorting }) => {
                     <div>
                       {" "}
                       <img src={userProfile} alt="fireSpot" /> &nbsp;
-                      {val.name} &nbsp; {filtered.length}
+                      {val.name} &nbsp;
+                      <span className="task-length"> {filtered.length}</span>
                     </div>
                     <div>
                       {" "}
