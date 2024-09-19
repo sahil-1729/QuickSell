@@ -1,8 +1,13 @@
 .nav-box {
-  border-width: 4px;
+  /* border-width: 4px;
   border-color: black;
   border-radius: 0.375rem;
-  border-style: solid;
+  border-style: solid; */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  background-color: white;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
 }
 button {
   align-items: center;
@@ -16,21 +21,49 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: #949596;
+  font-weight: 600;
 }
 select {
   width: 6.5rem;
   padding: 0.1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  border-color: #949596;
 }
-.temp {
+.display-button {
   background-color: white;
-  padding: 1rem;
   border-width: 1px;
-  border-color: black;
+  border-color: rgba(156, 163, 175);
   border-radius: 0.375rem;
   border-style: solid;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+}
+.temp {
+  background-color: #f2f2f7;
+  padding: 1rem;
+  border-width: 0.1px;
+  border-color: #949596;
+  border-radius: 0.375rem;
+  border-style: groove;
   position: absolute;
+  /* bottom: 5rem; */
+  top: 3.85rem;
   width: 15rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
+  /* drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06)); */
 }

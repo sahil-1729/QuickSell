@@ -73,9 +73,9 @@ const User = ({ sorting }) => {
                     {filtered.map((val, key) => {
                       return (
                         <div key={key} className="task">
-                          <div>{val.id}</div>
+                          <div className="task-box-id">{val.id}</div>
 
-                          <div>
+                          <div className="task-title">
                             <img src={status[val.status]} alt="fireSpot" />
                             &nbsp;
                             {val.title}

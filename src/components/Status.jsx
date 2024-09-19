@@ -91,7 +91,7 @@ const Status = ({ sorting }) => {
                         <div className="task-box-id">
                           {val.id} <img src={userProfile} alt="fireSpot" />
                         </div>
-                        <div>{val.title}</div>
+                        <div className="task-title">{val.title}</div>
                         <div className="task-tag-div">
                           <div className="task-tag">
                             <img

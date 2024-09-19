@@ -19,12 +19,13 @@ const Navbar = () => {
     <>
       <div className="nav-box">
         <button
-          className=""
+          className="display-button"
           onClick={(e) => {
             setVisible(!visible);
           }}
         >
-          <img src={display} alt="fireSpot" /> Display
+          <img src={display} alt="fireSpot" />
+          <div>Display</div>
           <img src={down} alt="fireSpot" />
         </button>
         <div
@@ -33,6 +34,7 @@ const Navbar = () => {
         >
           <div className="select-div">
             <div>Grouping</div>
+
             <select
               name="group"
               value={

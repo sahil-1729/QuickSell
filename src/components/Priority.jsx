@@ -102,7 +102,7 @@ const Priority = ({ sorting }) => {
                         <div className="task-box-id">
                           {val.id} <img src={userProfile} alt="fireSpot" />
                         </div>
-                        <div>
+                        <div className="task-title">
                           <img src={status[val.status]} alt="fireSpot" />
                           &nbsp;{val.title}
                         </div>
